@@ -1,0 +1,30 @@
+<div class="emptyref" *ngIf="emptyRefrigerator && !disconnected && !listOfItems.length">
+  <img src="assets/images/empty.png" alt="Empty Regrigerator">
+  <p>Looks like you have no items in you Refrigerator</p>
+</div>
+<div class="spinner text-center" *ngIf="!listOfItems.length && !emptyRefrigerator && !disconnected">
+  <mat-spinner color="#9c27b0"></mat-spinner>
+  <p>{{connectionStatus}}</p>
+</div>
+<div class="text-center disconnected" *ngIf="disconnected">
+  <img src="assets/images/dead.png" alt="dead">
+  <p class="text-danger">{{connectionStatus}}</p>
+</div>
+<table *ngIf="listOfItems.length && !disconnected" class="table table-dark text-center">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Last Found on</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of listOfItems">
+          <td>{{item.index+1}}</td>
+          <td>{{item.name|titlecase }}</td>
+          <td>{{item.quantity}}</td>
+          <td>{{item.time | date:'mediumTime'}}</td>
+      </tr>
+    </tbody>
+</table>

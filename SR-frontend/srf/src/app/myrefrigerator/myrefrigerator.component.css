@@ -1,0 +1,35 @@
+.emptyref img{
+    display: block;
+    text-align: center;
+    margin: -70px auto auto auto;
+    height: 500px;
+}
+
+.emptyref p{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(255, 102, 102);
+    /* background-color: rgb(193, 240, 241); */
+    /* border-radius: 5px; */
+    /* height: 50px; */
+}
+.purple{
+    background-color:#9c27b0;
+  }
+.spinner mat-spinner{
+    margin:75px auto;
+}
+.spinner p{
+    margin:75px auto;
+    color: #9c27b0;
+    font-size: large;
+}
+
+.disconnected p{
+    font-size: large;
+    margin: 100px auto;
+}
+
+.disconnected img {
+    height:200px;
+}

@@ -1,0 +1,67 @@
+<div class="col-md-6 offset-md-3">
+  <form [formGroup]="registerForm" novalidate (ngSubmit)="onSubmit()" (keyup.enter)="(!registerForm.invalid && !disableSubmit)?onSubmit():null">
+    <mat-card class="shipping-card text-center">
+      <!-- <mat-card-header> -->
+        <mat-card-title>Register your Smart Refrigerator</mat-card-title>
+      <!-- </mat-card-header> -->
+      <mat-card-content>
+        <div class="row">
+          <div class="col ">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Enter you Name" formControlName="UNAME">
+              <mat-error *ngIf="registerForm.controls.UNAME.errors?.required">
+                Name is <strong>required</strong>
+              </mat-error>
+              <mat-error *ngIf="registerForm.controls.UNAME.errors?.pattern">
+                Please Enter a valid name (eg without leading or trailing spaces, alphabets only)
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col ">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Enter you Password" formControlName="password" type="password" #password>
+              <button mat-button *ngIf="password.value && password.type == 'password'" matSuffix mat-icon-button aria-label="show" (click)="password.type='text'">
+                <mat-icon>visibility</mat-icon>
+              </button>
+              <button mat-button *ngIf="password.value && password.type == 'text'" matSuffix mat-icon-button aria-label="hide" (click)="password.type='password'">
+                <mat-icon>visibility_off</mat-icon>
+              </button>
+              <mat-error *ngIf="registerForm.controls.password.errors?.required">
+                Password is <strong>required</strong>
+              </mat-error>
+              <mat-error *ngIf="registerForm.controls.password.errors?.pattern">
+                Please Enter a valid password (Min 6 characters, 1 uppercase, 1 lowercase, 1 digit, 1 special symbol)
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col ">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Enter Refrigerator Id" formControlName="FID" type="text" (keyup.enter)="onSubmit()">
+              <mat-error *ngIf="registerForm.controls.FID.errors?.required">
+                Refrigerator Id is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+        
+      </mat-card-content> 
+      <mat-card-actions class="text-center">
+        <button mat-raised-button type="submit" [disabled]="registerForm.invalid || disableSubmit" #sb>Submit</button>
+        <button mat-raised-button type="button" (click)="registerForm.reset()" class="purple">Clear</button>
+      </mat-card-actions>
+      <div *ngIf="UID" class="alert alert-success">
+          <p>Your Refrigerator has been successfully registered!</p>
+          <p>Please note down your User ID : {{UID}}</p>
+      </div>
+      <div *ngIf="error" class="alert alert-danger">
+        <p>Something went Wrong.. {{error}}</p>
+    </div>
+    </mat-card>
+  </form>
+  
+</div>

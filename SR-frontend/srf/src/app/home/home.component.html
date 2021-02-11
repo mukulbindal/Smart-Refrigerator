@@ -1,0 +1,33 @@
+<div class="home text-center">
+    <div class="card text-center">
+        <div class="card-header text-center">
+          Step 1
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Register Your Refrigerator</h2><br>
+          <button (click)="routeTo('register')" class="btn" [disabled]="loggedIn">Register</button>
+        </div>
+    </div>
+
+    <div class="card text-center">
+        <div class="card-header text-center">
+          Step 2
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Login using your Credentials</h2><br>
+          <button  (click)="routeTo('login')" class="btn" [disabled]="loggedIn">Login</button>
+        </div>
+    </div>
+
+    <div class="card text-center">
+        <div class="card-header text-center">
+          Step 3
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Access your Refrigerator from anywhere</h2>
+          <button (click)="routeTo('myref')" class="btn" [disabled]="!loggedIn">My Refrigerator</button>
+        </div>
+    </div>
+
+
+</div>

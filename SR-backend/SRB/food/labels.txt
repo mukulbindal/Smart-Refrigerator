@@ -1,0 +1,12 @@
+{ bottle: True,
+bowl: True,
+banana: True,
+apple: True,
+sandwich: True,
+orange: True,
+broccoli: True,
+carrot: True,
+hot_dog: True,
+pizza: True,
+donut: True,
+cake: True }

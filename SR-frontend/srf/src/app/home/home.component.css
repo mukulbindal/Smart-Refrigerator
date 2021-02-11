@@ -1,0 +1,29 @@
+.home{
+    margin:50px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 1200px) {
+    .home{
+      flex-direction: column;
+    }
+  }
+
+.card{
+    background-color:rgb(34, 34, 34);
+    width: 300px;
+    height: 205px;
+    margin:30px 50px;
+    /* display: inline-block; */
+}
+
+.card-header{
+    background-color: #9c27b0;
+}
+
+.btn{
+    background-color: #9c27b0;
+    color:white;
+}
