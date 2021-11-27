@@ -1,6 +1,6 @@
 # Smart Refrigerator
 
-A smart way to keep eye on your daily needs. In this project we propose a new way to TOBEADDED
+A smart way to keep eye on your daily needs. What would you do when you are out and need to peep into your refrigerator?
 
 ## Prerequisites
 
@@ -15,7 +15,6 @@ A smart way to keep eye on your daily needs. In this project we propose a new wa
 * IP WebCam preferably 8 MP or above
 * Nvidia 1050 or above graphics card
 * Browsers like Chrome / Mozilla
-* TOBEADDED
 
 ## Setup
 
@@ -50,4 +49,29 @@ Open port 4200 in your localhost:
 
 ![Main Screen](https://github.com/mukulbindal/imagesForReadme/blob/main/SRF-home.png?raw=true)
 
+### Steps to use
+
+#### Register:
+
+The Refrigerator already has a webcam connected to a server. All refrigerator come with a unique ID associated with their IP Webcams. For demo, we can use (RF-100#) as the ID format.
+
+![Register](https://github.com/mukulbindal/imagesForReadme/blob/main/Register.png?raw=true)
+
+![Register](https://github.com/mukulbindal/imagesForReadme/blob/main/register-success.png?raw=true)
+#### Login:
+Upon successful registration, you need to collect the User ID to login and connect to your refrigerator from anywhere.
+
+![Login](https://github.com/mukulbindal/imagesForReadme/blob/main/loginsuccess.png?raw=true)
+#### My Refrigerator:
+A live report of the food items present in your refrigerator can be accessed from your laptop, PC, mobile anywhere. The simple and flexible design makes the process smooth.
+
+![Live Detection](https://github.com/mukulbindal/imagesForReadme/blob/main/smart-ref-live.png?raw=true)
 ### Full Demo Here:
+(Coming soon)
+### Future Improvements
+
+* Detect the rotten/expired food items (based on how long they are in the box).
+* Recommendation of healthier diet.
+* Your daily consumption report for healthy/unhealthy food.
+
+Any contributions are welcome!
