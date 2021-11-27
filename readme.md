@@ -66,6 +66,9 @@ Upon successful registration, you need to collect the User ID to login and conne
 A live report of the food items present in your refrigerator can be accessed from your laptop, PC, mobile anywhere. The simple and flexible design makes the process smooth.
 
 ![Live Detection](https://github.com/mukulbindal/imagesForReadme/blob/main/smart-ref-live.png?raw=true)
+
+<img src="https://github.com/mukulbindal/imagesForReadme/blob/main/localhost_4200_myref(Moto%20G4).png" width=100/>
+
 ### Full Demo Here:
 (Coming soon)
 ### Future Improvements
