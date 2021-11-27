@@ -12,7 +12,7 @@ from .liveFoodDetection import LiveDetection
 
 def detect_items(request):
     if request.method == 'GET':
-        IP = "192.168.1.4"
+        IP = "192.168.1.2"
         image_arr = putimage(IP)
         print(image_arr.size)
         start_time = timeit.default_timer()

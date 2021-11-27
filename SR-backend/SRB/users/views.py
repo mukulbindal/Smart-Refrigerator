@@ -8,12 +8,14 @@ from django.db.models import Max
 import string
 import random
 
-try:
-    r = Refrigerator(FID="RF-1001", IP="192.168.1.4")
-    r.save()
-except:
-    print("Exception bypassed in creating refrigertor")
-
+# Initial Setup (Not to be used in Production) ** Begin
+for IP_col_4 in range(50):
+    try:
+        r = Refrigerator(FID="RF-10{}".format("%02d"%IP_col_4), IP="192.168.1."+str(IP_col_4))
+        r.save()
+    except:
+        print("Exception bypassed in creating refrigerator")
+# Initial Setup (Not to be used in Production) ** End
 
 def generate_token(N=20):
     return ''.join(random.choices(string.ascii_uppercase + string.digits, k=N))

@@ -8,7 +8,7 @@ import threading
 import multiprocessing
 from asgiref.sync import async_to_sync
 import asyncio
-url = '192.168.1.4'
+url = '192.168.1.2'
 
 
 class ChatConsumer(WebsocketConsumer):
