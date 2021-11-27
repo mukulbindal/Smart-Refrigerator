@@ -48,6 +48,6 @@ $> ng serve -o
 ```
 Open port 4200 in your localhost:
 
-![Main Screen](https://i.ibb.co/XYszWD2/Screenshot-21.png)
+![Main Screen](https://github.com/mukulbindal/imagesForReadme/blob/main/SRF-home.png?raw=true)
 
 ### Full Demo Here:
