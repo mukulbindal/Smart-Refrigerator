@@ -41,5 +41,11 @@ $> cd SR-Frontend
 $> cd srf
 $> npm install -g @angular/cli
 $> npm i
+```
+Now start the Angular UI.
+```bash
 $> ng serve -o
 ```
+Open port 4200 in your localhost:
+
+![Main Screen](https://i.ibb.co/pzB7LbF/localhost-4200-home-1.png)
