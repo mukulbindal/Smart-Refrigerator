@@ -67,7 +67,7 @@ A live report of the food items present in your refrigerator can be accessed fro
 
 ![Live Detection](https://github.com/mukulbindal/imagesForReadme/blob/main/smart-ref-live.png?raw=true)
 
-<center><img src="https://github.com/mukulbindal/imagesForReadme/blob/main/localhost_4200_myref(Moto%20G4).png" width=400/></center>
+<center><img src="https://github.com/mukulbindal/imagesForReadme/blob/main/localhost_4200_myref(Moto%20G4).png" width=300 style="margin-left:auto;margin-right:auto;"/></center>
 
 ### Full Demo Here:
 (Coming soon)
